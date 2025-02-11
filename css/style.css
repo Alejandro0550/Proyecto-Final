@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header{
+    background-color: green;
+    height: 103px;
+    display: flex;
+    flex-direction: row;
+}
+header .logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 27%;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 22px;
+}
