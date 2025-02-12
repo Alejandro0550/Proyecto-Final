@@ -3,6 +3,10 @@ body{
     margin: 0;
     padding: 0;
 }
+.landing{
+    display: flex;
+    justify-content: space-between;
+}
 
 /* Header */
 header{
@@ -81,7 +85,7 @@ header a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70px;
+    width: 120px;
     margin-bottom: 15px;
     box-sizing: border-box;
 }
@@ -90,4 +94,82 @@ header a{
 }
 .izquierda .notificaciones .partidos-N .resultado .puntos{
     font-size: 22px;
+}
+
+/* Historial */
+.historial{
+    width: 360px;
+    height: 660px;
+    background-color: gray;
+    color: black;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.partidos-H{
+    margin-top: 10px;
+    width: 232px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    background-color: greenyellow;
+    border-radius: 14px;
+}
+.partidos-H.rojo{
+    background-color: red;
+}
+.izquierda .historial .partidos-H .escudo{
+    width: 35px;
+    height: 35px;
+}
+.izquierda .historial .partidos-H .partido-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 7px;
+    margin-left: 5px;
+}
+.izquierda .historial .partidos-H .partido-1 .escudo{
+    padding-left: 7px;
+    padding-right: 17px;
+}
+.izquierda .historial .partidos-H .partido-1 .s{
+    margin-left: 49px;
+}
+.izquierda .historial .partidos-H .partido-1 .especial{
+    margin-left: 42px;
+}
+.izquierda .historial .partidos-H .partido-1 .esp{
+    margin-left: 33px;
+}
+.izquierda .historial .partidos-H .partido-1 .es{
+    margin-left: 29px;
+}
+.izquierda .historial .partidos-H .partido-1 .e{
+    margin-left: 25px;
+}
+.izquierda .historial .partidos-H .partido-1 .puntos{
+    font-size: 22px;
+}
+.izquierda .historial .partidos-H  .liga{
+   display: flex;
+   margin-left: 145px;
+   align-items: center;
+}
+.izquierda .historial .partidos-H  .liga span{
+   font-size: 27px;
+   margin-right: 10px;
+}
+
+/* Derecha */
+
+/* Apuestas activas */
+.activas{
+    width: 360px;
+    height: 400px;
+    background-color: burlywood;
+    display: flex;
 }
