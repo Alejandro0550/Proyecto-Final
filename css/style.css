@@ -169,7 +169,45 @@ header a{
 /* Apuestas activas */
 .activas{
     width: 360px;
-    height: 400px;
+    height: 327px;
     background-color: burlywood;
     display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.activas .apuesta {
+    margin-bottom: 15px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(194, 194, 194);
+}
+.activas .apuesta .titulo span{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.activas .apuesta .titulo{
+    padding: 5px;
+}
+.activas .apuesta .eleccion{
+    display: flex;
+    flex-direction: row;
+    margin-right: 22px;
+}
+.activas .apuesta .eleccion .bloque{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    margin-left: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: gray;
+}
+.activas .apuesta .eleccion .bloque.verde{
+    background-color: greenyellow;
 }
