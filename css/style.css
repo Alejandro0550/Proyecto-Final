@@ -345,6 +345,11 @@ header a{
         width: 33%;
     }
 }
+.centro .desafio .izq .bloque .barra.tres{
+    .interior{
+        width: 67%;
+    }
+}
 /* Desafios */
 
 .centro .desafio .der{
@@ -376,4 +381,19 @@ header a{
     height: 20px;
     display: flex;
     justify-content: center;    
+}
+.centro .desafio .der .bloque .barra.uno{
+    .interior{
+        width: 17%;
+    }
+}
+.centro .desafio .der .bloque .barra.dos{
+    .interior{
+        width: 100%;
+    }
+}
+.centro .desafio .der .bloque .barra.tres{
+    .interior{
+        width: 83%;
+    }
 }
