@@ -286,7 +286,7 @@ header a{
 /* Desafios Izq*/
 .centro{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .centro .contenedor{
     background-color: gray;
@@ -397,3 +397,30 @@ header a{
         width: 83%;
     }
 }
+
+/* Clasificacion Semanal */
+.centro .clasificacion{
+    background-color: white;
+    margin: 10px;
+    margin-top: 20px;
+    height: 600px;
+}
+.centro .clasificacion table{
+    width: 100%;
+    display: flex;
+}
+.centro .clasificacion table thead{
+    width: 100%;
+    display: flex;
+}
+.centro .clasificacion table thead tr{
+    width: 100%;
+    display: flex;
+}
+.centro .clasificacion table thead tr td{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centro .clasificacion table tbod
