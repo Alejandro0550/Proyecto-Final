@@ -408,10 +408,12 @@ header a{
 .centro .clasificacion table{
     width: 100%;
     display: flex;
+    flex-direction: column;
 }
 .centro .clasificacion table thead{
     width: 100%;
     display: flex;
+
 }
 .centro .clasificacion table thead tr{
     width: 100%;
@@ -423,4 +425,19 @@ header a{
     align-items: center;
     justify-content: center;
 }
-.centro .clasificacion table tbod
+.centro .clasificacion table tbody tr td{
+    padding: 10px;
+}
+.centro .clasificacion table tbody tr td img{
+    width: 60px;
+    border-radius: 50%;
+    height: 60px;
+}
+.centro .clasificacion table tbody tr .persona{  
+    display: flex;
+    width: 100px;
+    align-items: center;
+}
+.centro .clasificacion table tbody tr td span{
+    margin-left: 10px;
+}
