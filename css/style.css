@@ -290,7 +290,7 @@ header a{
 }
 .centro .contenedor{
     background-color: gray;
-    width: 550px;
+    width: 950px;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -404,6 +404,7 @@ header a{
     margin: 10px;
     margin-top: 20px;
     height: 600px;
+    width: 1000px;
 }
 .centro .clasificacion table{
     width: 100%;
@@ -427,6 +428,8 @@ header a{
 }
 .centro .clasificacion table tbody tr td{
     padding: 10px;
+    width: 20%;
+    padding-right: 140px;
 }
 .centro .clasificacion table tbody tr td img{
     width: 60px;
@@ -438,12 +441,46 @@ header a{
     width: 170px;
     align-items: center;
     margin-right: 10px;
+    padding-left: 30px;
 }
 .centro .clasificacion table tbody tr  .puntos{
     width: 120px;
-    margin-left: 120px;
+    padding-right: 210px;   
+}
+.centro .clasificacion table tbody tr  .puntos2{
+    width: 120px;
+    padding-right: 215px;    
 }
 .centro .clasificacion table tbody tr td span{
     margin-left: 10px;
     width: 100%;
+}
+
+/* Footer */
+footer{
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+}
+footer .izq{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+footer .izq span{
+    margin-left: 10px;
+}
+footer .der{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+footer .der img{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
 }
