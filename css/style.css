@@ -435,9 +435,15 @@ header a{
 }
 .centro .clasificacion table tbody tr .persona{  
     display: flex;
-    width: 100px;
+    width: 170px;
     align-items: center;
+    margin-right: 10px;
+}
+.centro .clasificacion table tbody tr  .puntos{
+    width: 120px;
+    margin-left: 120px;
 }
 .centro .clasificacion table tbody tr td span{
     margin-left: 10px;
+    width: 100%;
 }
