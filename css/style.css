@@ -484,3 +484,61 @@ footer .der img{
     height: 40px;
     margin-right: 15px;
 }
+
+/*Media Queries*/
+
+/* Tablet */
+@media (max-width: 768px) and (min-width: 481px) {
+    .login-form {
+        width: 60%;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .landing {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .izquierda, .derecha {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+  
+    }
+
+    .centro {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/*Movil*/
+@media (max-width: 480px) {
+    .login-form {
+        width: 80%;
+        padding: 20px;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .landing {
+        flex-direction: column;
+        align-items: center;
+    }
+    .izquierda, .centro, .derecha {
+        width: 100%;
+        align-items: center;
+    }
+}
+/**************************************************************************************************/

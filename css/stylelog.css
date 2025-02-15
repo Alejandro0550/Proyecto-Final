@@ -1,0 +1,133 @@
+/* Header */
+header{
+    background-color: green;
+    height: 103px;
+    display: flex;
+    flex-direction: row;
+}
+header .logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 27%;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/*Body*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/baloncesto\ -\ login.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/*Contenedor*/
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/*Formulario*/
+.login-form {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/*Etiquetas*/
+.login-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/*Cajas de texto*/
+.login-form input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/*Botón de registro*/
+.login-form button {
+    background-color: #000;
+    color: white;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #444;
+}
+
+/* Footer */
+footer{
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+}
+footer .izq{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+footer .izq span{
+    margin-left: 10px;
+}
+footer .der{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+footer .der img{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+/*Media Queries*/
+@media (max-width: 780px) {
+    .login-form {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form {
+        width: 80%;
+        padding: 20px;
+    }
+}
