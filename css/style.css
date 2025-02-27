@@ -555,6 +555,7 @@ footer .der img{
 .derecha .recomendadas .apuesta:hover{
     transform: scale(1.05);
 }
+
 .izquierda .notificaciones .partidos-N:nth-child(odd){
     animation-name: parpadeo;
   animation-duration: 2s;
