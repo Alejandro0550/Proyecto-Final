@@ -24,6 +24,13 @@ header a{
     font-weight: bold;
     font-size: 22px;
 }
+header nav a:hover{
+    transform: scale(1.05);
+    color: white;
+}
+header nav a img:hover{
+    transform: scale(1.5);
+}
 
 /*Body*/
 body {
@@ -58,6 +65,10 @@ body {
     gap: 15px;
 }
 
+.login-form:hover {
+    transform: scale(1.05);
+}
+
 /*Etiquetas*/
 .login-form label {
     font-size: 14px;
@@ -86,8 +97,8 @@ body {
 }
 
 .login-form button:hover {
-    transition: 0.3s;
     background-color: #444;
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -119,6 +130,13 @@ footer .der img{
     margin-right: 15px;
 }
 
+footer .der img:hover{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    transform: scale(1.1);
+}
+
 /*Media Queries*/
 @media (max-width: 780px) {
     .login-form {
@@ -132,3 +150,5 @@ footer .der img{
         padding: 20px;
     }
 }
+/***************************************************/
+
