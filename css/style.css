@@ -555,3 +555,32 @@ footer .der img{
 .derecha .recomendadas .apuesta:hover{
     transform: scale(1.05);
 }
+.izquierda .notificaciones .partidos-N:nth-child(odd){
+    animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  
+}
+@-moz-keyframes parpadeo{  
+    0% { opacity: 0.25; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 0.25; }
+    50% { opacity: 0.5; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 0.25; }
+     50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+  }
