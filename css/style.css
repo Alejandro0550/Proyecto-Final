@@ -555,3 +555,20 @@ footer .der img{
 .derecha .recomendadas .apuesta:hover{
     transform: scale(1.05);
 }
+
+header nav a:hover{
+    transform: scale(1.05);
+    color: white;
+}
+
+header nav a img:hover{
+    transform: scale(1.5);
+}
+
+footer .der img:hover{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    transform: scale(1.1);
+}
+
