@@ -693,3 +693,23 @@ footer .der img:hover{
     justify-content: center;
     align-items: center;
 }
+
+/***********************************************/
+/**Efecto shake en las apuestas erroneas*/
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.recomendadas .apuesta .actual {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.recomendadas .apuesta .actual:active {
+    animation: shake 0.4s ease-in-out;
+}
+/************************************************/
