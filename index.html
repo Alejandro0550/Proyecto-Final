@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,403 +8,416 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Hecho por Alejandro y Juan">
     <title>Landing Page</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="js/app.js" defer></script>
 </head>
+
 <body class="hidden">
-    <div class="centrado" id="onload">
-       <span class="loader"></span> 
+    <div class="centrado" id="onload" role="alert" aria-live="assertive">
+        <span class="loader" aria-label="Cargando contenido..."></span>
     </div>
     <header>
         <img src="/img/Logo.png" alt="Logotipo" class="logo">
         <nav>
-            <a href="">Futbol</a>
-            <a href="">Basketball</a>
-            <a href="">Baseball</a>
-            <a href="index.html">Home</a>
-            <a href="log-page.html"><img src="/img/usuario.png" alt=""></a>
+            <a href="index.html" title="Sección de Fútbol">Fútbol</a>
+            <a href="index.html" title="Sección de Baloncesto">Baloncesto</a>
+            <a href="index.html" title="Sección de Béisbol">Béisbol</a>
+            <a href="index.html" title="Página de inicio">Home</a>
+            <a href="log-page.html" title="Iniciar sesión"><img src="/img/usuario.png" alt="Ícono de usuario"></a>
         </nav>
     </header>
-    <div class="landing">
-        <div class="izquierda">
-            <div class="saldo">
-                <img src="/img/usuario.png" alt="">Saldo: 40€
-            </div>
-            <div class="notificaciones">
-                <div class="partidos-N">
-                    <div class="escudo">
-                        <img src="/img/Barça.png" alt="Escudo del barça">
-                    </div>
-                    <div class="resultado">
-                        <p>La liga</p>
-                        <p class="puntos">3 - 1</p>
-                        <p>Minuto 90+5</p>
-                    </div>
-                    <div class="escudo">
-                        <img src="/img/Deport.png" alt="Esuco del deportivo de alaves">
-                    </div>
+    <main>
+        <section class="landing">
+            <aside class="izquierda">
+                <div class="saldo">
+                    <img src="/img/usuario.png" alt="">Saldo: 40€
                 </div>
-                <div class="partidos-N">
-                    <div class="escudo">
-                        <img src="/img/Liverpool.png" alt="Escudo del barça">
-                    </div>
-                    <div class="resultado">
-                        <p>Champions league</p>
-                        <p class="puntos">1 - 2</p>
-                        <p>Minuto 79</p>
-                    </div>
-                    <div class="escudo">
-                        <img src="/img/Real Madrid.png" alt="Esuco del deportivo de alaves">
-                    </div>
-                </div>
-            </div>
-            <div class="historial">
-                <div class="partidos-H">
-                    <div class="partido-1">
-                        <span >Real Madrid </span>
+                <section class="notificaciones" aria-label="Últimos resultados">
+                    <div class="partidos-N">
                         <div class="escudo">
-                            <img class="escudo" src="img/Real Madrid.png" alt="Escudo del Real Madrid">
+                            <img src="/img/Barça.png" alt="Escudo del Barcelona">
                         </div>
-                        <div class="puntos">1</div>
-                    </div>
-                    <div class="liga">
-                        <span> - </span>  La Liga
-                    </div>
-                    <div class="partido-1">
-                        <span> Barça </span>
+                        <div class="resultado">
+                            <p>La liga</p>
+                            <p class="puntos">3 - 1</p>
+                            <p>Minuto 90+5</p>
+                        </div>
                         <div class="escudo">
-                            <img class="escudo especial" src="img/Barça.png" alt="Escudo del Barça">
+                            <img src="/img/Deport.png" alt="Escudo del Deportivo Alaves">
                         </div>
-                        <div class="puntos especial">1</div>
-                    </div>  
-                </div>
+                    </div>
+                    <div class="partidos-N">
+                        <div class="escudo">
+                            <img src="/img/Liverpool.png" alt="Escudo del Liverpool">
+                        </div>
+                        <div class="resultado">
+                            <p>Champions league</p>
+                            <p class="puntos">1 - 2</p>
+                            <p>Minuto 79</p>
+                        </div>
+                        <div class="escudo">
+                            <img src="/img/Real Madrid.png" alt="Escudo del Real Madrid">
+                        </div>
+                    </div>
+                </section>
+                <div class="historial">
+                    <div class="partidos-H">
+                        <div class="partido-1">
+                            <span>Real Madrid </span>
+                            <div class="escudo">
+                                <img class="escudo" src="img/Real Madrid.png" alt="Escudo del Real Madrid">
+                            </div>
+                            <div class="puntos">1</div>
+                        </div>
+                        <div class="liga">
+                            <span> - </span> La Liga
+                        </div>
+                        <div class="partido-1">
+                            <span> Barcelona </span>
+                            <div class="escudo">
+                                <img class="escudo especial" src="/img/Barça.png" alt="Escudo del Barcelona">
+                            </div>
+                            <div class="puntos especial">1</div>
+                        </div>
+                    </div>
 
-                <div class="partidos-H rojo">
-                    <div class="partido-1">
-                        <span >Granada</span>
-                        <div class="escudo">
-                            <img class="escudo es" src="img/Granada.png" alt="Escudo del Real Madrid">
+                    <div class="partidos-H rojo">
+                        <div class="partido-1">
+                            <span>Granada</span>
+                            <div class="escudo">
+                                <img class="escudo es" src="img/Granada.png" alt="Escudo del Granada FC">
+                            </div>
+                            <div class="puntos es">1</div>
                         </div>
-                        <div class="puntos es">1</div>
-                    </div>
-                    <div class="liga">
-                        <span> - </span>  La Liga
-                    </div>
-                    <div class="partido-1">
-                        <span>Getafe </span>
-                        <div class="escudo">
-                            <img class="escudo especial" src="img/Getafe.png" alt="Escudo del Barça">
+                        <div class="liga">
+                            <span> - </span> La Liga
                         </div>
-                        <div class="puntos especial">3</div>
-                    </div>  
-                </div>
+                        <div class="partido-1">
+                            <span>Getafe </span>
+                            <div class="escudo">
+                                <img class="escudo especial" src="img/Getafe.png" alt="Escudo del Getafe CF">
+                            </div>
+                            <div class="puntos especial">3</div>
+                        </div>
+                    </div>
 
-                <div class="partidos-H">
-                    <div class="partido-1">
-                        <span>Man.Utd</span>
-                        <div class="escudo">
-                            <img class="escudo es" src="img/Manchester United.png" alt="Escudo del Real Madrid">
+                    <div class="partidos-H">
+                        <div class="partido-1">
+                            <span>Man.Utd</span>
+                            <div class="escudo">
+                                <img class="escudo es" src="img/Manchester United.png"
+                                    alt="Escudo del Manchester United">
+                            </div>
+                            <div class="puntos es">2</div>
                         </div>
-                        <div class="puntos es">2</div>
-                    </div>
-                    <div class="liga">
-                        <span> - </span>  Premier League
-                    </div>
-                    <div class="partido-1">
-                        <span>Man.City</span>
-                        <div class="escudo">
-                            <img class="escudo e" src="img/Manchester City.png" alt="Escudo del Barça">
+                        <div class="liga">
+                            <span> - </span> Premier League
                         </div>
-                        <div class="puntos e">2</div>
-                    </div>  
-                </div>
+                        <div class="partido-1">
+                            <span>Man.City</span>
+                            <div class="escudo">
+                                <img class="escudo e" src="img/Manchester City.png" alt="Escudo del Manchester City">
+                            </div>
+                            <div class="puntos e">2</div>
+                        </div>
+                    </div>
 
-                <div class="partidos-H rojo">
-                    <div class="partido-1">
-                        <span >Villareal</span>
-                        <div class="escudo">
-                            <img class="escudo es" src="img/Villareal.png" alt="Escudo del Real Madrid">
+                    <div class="partidos-H rojo">
+                        <div class="partido-1">
+                            <span>Villareal</span>
+                            <div class="escudo">
+                                <img class="escudo es" src="img/Villareal.png" alt="Escudo del Villarreal CF">
+                            </div>
+                            <div class="puntos es">4</div>
                         </div>
-                        <div class="puntos es">4</div>
-                    </div>
-                    <div class="liga">
-                        <span> - </span>  Europa League
-                    </div>
-                    <div class="partido-1">
-                        <span>Chelsea </span>
-                        <div class="escudo">
-                            <img class="escudo esp" src="img/Chelsea.png" alt="Escudo del Barça">
+                        <div class="liga">
+                            <span> - </span> Europa League
                         </div>
-                        <div class="puntos esp">2</div>
-                    </div>  
-                </div>
+                        <div class="partido-1">
+                            <span>Chelsea </span>
+                            <div class="escudo">
+                                <img class="escudo esp" src="img/Chelsea.png" alt="Escudo del Chelsea FC">
+                            </div>
+                            <div class="puntos esp">2</div>
+                        </div>
+                    </div>
 
-                <div class="partidos-H rojo">
-                    <div class="partido-1">
-                        <span >Bayern.Mun</span>
-                        <div class="escudo">
-                            <img class="escudo " src="img/Bayern.png" alt="Escudo del Real Madrid">
+                    <div class="partidos-H rojo">
+                        <div class="partido-1">
+                            <span>Bayern.Mun</span>
+                            <div class="escudo">
+                                <img class="escudo " src="img/Bayern.png" alt="Escudo del Bayern Munchen">
+                            </div>
+                            <div class="puntos ">1</div>
                         </div>
-                        <div class="puntos ">1</div>
-                    </div>
-                    <div class="liga">
-                        <span> - </span>  Europa League
-                    </div>
-                    <div class="partido-1">
-                        <span>PSG </span>
-                        <div class="escudo">
-                            <img class="escudo s" src="img/PSG.png" alt="Escudo del Barça">
+                        <div class="liga">
+                            <span> - </span> Europa League
                         </div>
-                        <div class="puntos s">1</div>
-                    </div>  
-                </div>
+                        <div class="partido-1">
+                            <span>PSG </span>
+                            <div class="escudo">
+                                <img class="escudo s" src="img/PSG.png" alt="Escudo del PSG">
+                            </div>
+                            <div class="puntos s">1</div>
+                        </div>
+                    </div>
 
-            </div>
-        </div>
-        <div class="centro">
-            <div class="contenedor">
-                <p>Desafio - 1: Gana 6 apuestas seguidas</p>
-                <div class="desafio">
-                    <div class="izq">
-                        <div class="bloque">
-                            <div class="usuario">
-                                <img src="/img/usuario.png" alt="Usuario">
+                </div>
+            </aside>
+            <section class="centro">
+                <div class="contenedor">
+                    <article>Desafio - 1: Gana 6 apuestas seguidas</article>
+                    <div class="desafio">
+                        <div class="izq">
+                            <div class="bloque">
+                                <div class="usuario">
+                                    <img src="/img/usuario.png" alt="Usuario">
+                                </div>
+                                <div class="barra">
+                                    <div class="interior"></div> 50%
+                                </div>
                             </div>
-                            <div class="barra">
-                                <div class="interior"></div> 50%   
+                            <div class="bloque">
+                                <div class="usuario">
+                                    <img src="/img/usuario.png" alt="Usuario">
+                                </div>
+                                <div class="barra dos">
+                                    <div class="interior "></div> 33%
+                                </div>
                             </div>
-                        </div>
-                        <div class="bloque">
-                            <div class="usuario">
-                                <img src="/img/usuario.png" alt="Usuario">
-                            </div>
-                            <div class="barra dos">
-                                <div class="interior "></div> 33%   
-                            </div>
-                        </div>
-                        <div class="bloque">
-                            <div class="usuario">
-                                <img src="/img/usuario.png" alt="Usuario">
-                            </div>
-                            <div class="barra tres">
-                                <div class="interior"></div> 67%   
-                            </div>
-                        </div>
-                    </div>
-                    <div class="der">
-                        <div class="bloque">
-                            <div class="usuario">
-                                <img src="/img/usuario.png" alt="Usuario">
-                            </div>
-                            <div class="barra uno">
-                                <div class="interior"></div> 17%   
+                            <div class="bloque">
+                                <div class="usuario">
+                                    <img src="/img/usuario.png" alt="Usuario">
+                                </div>
+                                <div class="barra tres">
+                                    <div class="interior"></div> 67%
+                                </div>
                             </div>
                         </div>
-                        <div class="bloque">
-                            <div class="usuario">
-                                <img src="/img/usuario.png" alt="Usuario">
+                        <div class="der">
+                            <div class="bloque">
+                                <div class="usuario">
+                                    <img src="/img/usuario.png" alt="Usuario">
+                                </div>
+                                <div class="barra uno">
+                                    <div class="interior"></div> 17%
+                                </div>
                             </div>
-                            <div class="barra dos">
-                                <div class="interior">100%</div>    
+                            <div class="bloque">
+                                <div class="usuario">
+                                    <img src="/img/usuario.png" alt="Usuario">
+                                </div>
+                                <div class="barra dos">
+                                    <div class="interior">100%</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="bloque">
-                            <div class="usuario">
-                                <img src="/img/usuario.png" alt="Usuario">
-                            </div>
-                            <div class="barra tres">
-                                <div class="interior">83%</div>   
+                            <div class="bloque">
+                                <div class="usuario">
+                                    <img src="/img/usuario.png" alt="Usuario">
+                                </div>
+                                <div class="barra tres">
+                                    <div class="interior">83%</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="clasificacion">
-                <table>
-                    <thead>
-                        <tr>
-                            <td><img src="/img/usuario.png" alt="usuario">Clasificación Semanal</td>
-                            <td>Percent</td>
-                            <td>Lose</td>
-                            <td>Win</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="persona"><img src="/img/elon-musk.jpg" alt=""><span>Elusk <br>Elon Zusk</span> </td>
-                            <td class="puntos">69%</td>
-                            <td class="puntos2  ">239</td>
-                            <td class="puntos3">540</td>
-                        </tr>
-                        <tr>
-                            <td class="persona"><img src="/img/Mark_Zuckerberg.jpg" alt=""><span>MeKa <br>Mark Muskergerg</span> </td>
-                            <td class="puntos">20%</td>
-                            <td class="puntos2 ">452</td>
-                            <td class="puntos3">113</td>
-                        </tr>
-                        <tr>
-                            <td class="persona"><img src="/img/Trump.jpg" alt=""><span>Dump <br>Donald Pump</span> </td>
-                            <td class="puntos">86%</td>
-                            <td class="puntos2">111</td>
-                            <td class="puntos3">666</td>
-                        </tr>
-                        <tr>
-                            <td class="persona"><img src="/img/Joe_Biden.jpg" alt=""><span>Jo_Vi <br>Joel Vidente</span> </td>
-                            <td class="puntos">49%</td>
-                            <td class="puntos2">239</td>
-                            <td class="puntos3">232</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="derecha">
-            <div class="activas">
-                <div class="apuesta">
-                    <div class="titulo">
-                        Athletic Club - FC Viktoria Pl.
-                        <br>
-                       <span>Martes 21:00h</span> 
-                    </div>
-                    <div class="eleccion">
-                        <div class="bloque">
-                            <div>1</div>
-                            <div>1.21</div>
-                        </div>
-                        <div class="bloque">
-                            <div>X</div>
-                            <div>0.81</div>
-                        </div>
-                        <div class="bloque verde">
-                            <div>2</div>
-                            <div>3.75</div>
-                        </div>
-                    </div>
+                <div class="clasificacion">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td><img src="/img/usuario.png" alt="usuario">Clasificación Semanal</td>
+                                <td>Percent</td>
+                                <td>Lose</td>
+                                <td>Win</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="persona"><img src="/img/elon-musk.jpg" alt=""><span>Elusk <br>Elon
+                                        Zusk</span>
+                                </td>
+                                <td class="puntos">69%</td>
+                                <td class="puntos2  ">239</td>
+                                <td class="puntos3">540</td>
+                            </tr>
+                            <tr>
+                                <td class="persona"><img src="/img/Mark_Zuckerberg.jpg" alt=""><span>MeKa <br>Mark
+                                        Muskergerg</span> </td>
+                                <td class="puntos">20%</td>
+                                <td class="puntos2 ">452</td>
+                                <td class="puntos3">113</td>
+                            </tr>
+                            <tr>
+                                <td class="persona"><img src="/img/Trump.jpg" alt=""><span>Dump <br>Donald Pump</span>
+                                </td>
+                                <td class="puntos">86%</td>
+                                <td class="puntos2">111</td>
+                                <td class="puntos3">666</td>
+                            </tr>
+                            <tr>
+                                <td class="persona"><img src="/img/Joe_Biden.jpg" alt=""><span>Jo_Vi <br>Joel
+                                        Vidente</span>
+                                </td>
+                                <td class="puntos">49%</td>
+                                <td class="puntos2">239</td>
+                                <td class="puntos3">232</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="apuesta">
-                    <div class="titulo">
-                        Real Sociedad - Sturm Graz
-                        <br>
-                       <span>Martes 21:00h</span> 
-                    </div>
-                    <div class="eleccion">
-                        <div class="bloque">
-                            <div>1</div>
-                            <div>0.19</div>
+            </section>
+            <aside class="derecha">
+                <div class="activas">
+                    <div class="apuesta">
+                        <div class="titulo">
+                            Athletic Club - FC Viktoria Pl.
+                            <br>
+                            <span>Martes 21:00h</span>
                         </div>
-                        <div class="bloque verde">
-                            <div>X</div>
-                            <div>10.57</div>
-                        </div>
-                        <div class="bloque">
-                            <div>2</div>
-                            <div>25.45</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="recomendadas">
-                <p>Apuestas recomendadas por tus amigos</p>
-                <div class="apuesta">
-                    <div class="titulo">
-                        CA Adolsiva - Boca Juniors
-                        <br>
-                       <span>Sábado 16:00h</span> 
-                    </div>
-                    <div class="eleccion">
-                        <div class="bloque">
-                            <div>1</div>
-                            <div>3.11</div>
-                        </div>
-                        <div class="bloque">
-                            <div>X</div>
-                            <div>10.99</div>
-                        </div>
-                        <div class="bloque ">
-                            <div>2</div>
-                            <div>35.45</div>
+                        <div class="eleccion">
+                            <div class="bloque">
+                                <div>1</div>
+                                <div>1.21</div>
+                            </div>
+                            <div class="bloque">
+                                <div>X</div>
+                                <div>0.81</div>
+                            </div>
+                            <div class="bloque verde">
+                                <div>2</div>
+                                <div>3.75</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="actual">
-                        <div>Apuesta actual: </div>
-                        <div>12€</div>
-                        
-                    </div>
-                    <div class="monto">
-                        <div>5€</div>
-                        <div>Rentabilidad de la apuesta</div>
-                        <div>216.64€</div>
+                    <div class="apuesta">
+                        <div class="titulo">
+                            Real Sociedad - Sturm Graz
+                            <br>
+                            <span>Martes 21:00h</span>
+                        </div>
+                        <div class="eleccion">
+                            <div class="bloque">
+                                <div>1</div>
+                                <div>0.19</div>
+                            </div>
+                            <div class="bloque verde">
+                                <div>X</div>
+                                <div>10.57</div>
+                            </div>
+                            <div class="bloque">
+                                <div>2</div>
+                                <div>25.45</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="apuesta">
-                    <div class="titulo">
-                        River plate - Central Córdoba
-                        <br>
-                       <span>Martes 21:00h</span> 
-                    </div>
-                    <div class="eleccion">
-                        <div class="bloque">
-                            <div>1</div>
-                            <div>25.99</div>
+                <div class="recomendadas">
+                    <p>Apuestas recomendadas por tus amigos</p>
+                    <div class="apuesta">
+                        <div class="titulo">
+                            CA Adolsiva - Boca Juniors
+                            <br>
+                            <span>Sábado 16:00h</span>
                         </div>
-                        <div class="bloque">
-                            <div>X</div>
-                            <div>10.81</div>
+                        <div class="eleccion">
+                            <div class="bloque">
+                                <div>1</div>
+                                <div>3.11</div>
+                            </div>
+                            <div class="bloque">
+                                <div>X</div>
+                                <div>10.99</div>
+                            </div>
+                            <div class="bloque ">
+                                <div>2</div>
+                                <div>35.45</div>
+                            </div>
                         </div>
-                        <div class="bloque ">
-                            <div>2</div>
-                            <div>1.11</div>
+                        <div class="actual">
+                            <div>Apuesta actual: </div>
+                            <div>12€</div>
+
+                        </div>
+                        <div class="monto">
+                            <div>5€</div>
+                            <div>Rentabilidad de la apuesta</div>
+                            <div>216.64€</div>
                         </div>
                     </div>
-                    <div class="actual">
-                        <div>Apuesta actual: </div>
-                        <div>1€</div>
-                        
+
+                    <div class="apuesta">
+                        <div class="titulo">
+                            River plate - Central Córdoba
+                            <br>
+                            <span>Martes 21:00h</span>
+                        </div>
+                        <div class="eleccion">
+                            <div class="bloque">
+                                <div>1</div>
+                                <div>25.99</div>
+                            </div>
+                            <div class="bloque">
+                                <div>X</div>
+                                <div>10.81</div>
+                            </div>
+                            <div class="bloque ">
+                                <div>2</div>
+                                <div>1.11</div>
+                            </div>
+                        </div>
+                        <div class="actual">
+                            <div>Apuesta actual: </div>
+                            <div>1€</div>
+
+                        </div>
+                        <div class="monto">
+                            <div>5€</div>
+                            <div>Rentabilidad de la apuesta</div>
+                            <div>48.74€</div>
+                        </div>
                     </div>
-                    <div class="monto">
-                        <div>5€</div>
-                        <div>Rentabilidad de la apuesta</div>
-                        <div>48.74€</div>
-                    </div>
+
                 </div>
 
-            </div>    
+            </aside>
 
-            </div>
-
-        </div>
-    </div>
+        </section>
+    </main>
+    
     <footer>
         <div class="izq">
-            <img src="img/CC License.png" alt="licencia">
+            <img src="img/CC License.png" alt="Licencia Creative Commons">
             <span>Alejandro y Juan</span>
         </div>
         <div class="der">
-            <img src="img/instagram_icon_264992.png" alt="">
-            <img src="img/twitch.png" alt="">
-            <img src="img/youtube_logo_icon_168737.png" alt="">
-            <img src="img/twitter_socialnetwork_20007.png" alt="">
+            <a href="#" title="Instagram"><img src="img/instagram_icon_264992.png" alt="Instagram"></a>
+            <a href="#" title="Twitch"><img src="img/twitch.png" alt="Twitch"></a>
+            <a href="#" title="YouTube"><img src="img/youtube_logo_icon_168737.png" alt="YouTube"></a>
+            <a href="#" title="Twitter"><img src="img/twitter_socialnetwork_20007.png" alt="Twitter"></a>
         </div>
     </footer>
+
     <script type="text/javascript">
-        (function(d, t) {
+        (function (d, t) {
             var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            v.onload = function() {
-              window.voiceflow.chat.load({
-                verify: { projectID: '67ccb8a071a708d6b598eb6d' },
-                url: 'https://general-runtime.voiceflow.com',
-                versionID: 'production',
-                voice: {
-                  url: "https://runtime-api.voiceflow.com"
-                }
-              });
+            v.onload = function () {
+                window.voiceflow.chat.load({
+                    verify: { projectID: '67ccb8a071a708d6b598eb6d' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production',
+                    voice: {
+                        url: "https://runtime-api.voiceflow.com"
+                    }
+                });
             }
             v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
         })(document, 'script');
-      </script>
+    </script>
 </body>
+
 </html>
